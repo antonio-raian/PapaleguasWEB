@@ -1,0 +1,652 @@
+50
+12
+Amaralina Salvador Bahia
+Ondina Salvador Bahia/5,0 km/12 min
+Sete de Abril Salvador Bahia/17,0 km/29 min
+Retiro Salvador Bahia/12,9 km/22 min
+São Cristóvão Salvador Bahia/21,4 km/29 min
+Mares Salvador Bahia/13,8 km/29 min
+Plataforma Salvador Bahia/19,0 km/36 min
+Pau Miúdo Salvador Bahia/11,4 km/21 min
+Praia Grande Salvador Bahia/22,0 km/42 min
+Porto Seco Pirajá Salvador Bahia/23,4 km/30 min
+Bonfim Salvador Bahia/14,6 km/31 min
+Arenoso Salvador Bahia/11,6 km/22 min
+São Rafael Salvador Bahia/13,9 km/23 min
+Areia Branca Salvador Bahia
+São Caetano Salvador Bahia/24,9 km/29 min
+Nazaré Salvador Bahia/33,8 km/34 min
+Marechal Rondon Salvador Bahia/23,4 km/28 min
+Jardim Cajazeiras Salvador Bahia/23,7 km/28 min
+Stella Maris Salvador Bahia/26,6 km/27 min
+Mares Salvador Bahia/34,8 km/39 min
+Imbuí Salvador Bahia/33,8 km/36 min
+Massaranduba Salvador Bahia/36,2 km/45 min
+São Rafael Salvador Bahia/32,8 km/33 min
+São Cristóvão Salvador Bahia/25,6 km/26 min
+Retiro Salvador Bahia/26,7 km/30 min
+Ondina Salvador Bahia/36,6 km/41 min
+Arenoso Salvador Bahia
+Uruguai Salvador Bahia/12,2 km/24 min
+Plataforma Salvador Bahia/10,6 km/30 min
+Brotas Salvador Bahia/14,0 km/23 min
+Santa Luzia Salvador Bahia/11,5 km/21 min
+IAPI Salvador Bahia/10,8 km/20 min
+Ondina Salvador Bahia/15,5 km/28 min
+Praia Grande Salvador Bahia/16,1 km/34 min
+Mangueira Salvador Bahia/13,5 km/28 min
+Santa Mônica Salvador Bahia/10,8 km/22 min
+Vitória Salvador Bahia/17,8 km/29 min
+Rio Vermelho Salvador Bahia/14,2 km/28 min
+Cabula Salvador Bahia/10,3 km/19 min
+Bonfim Salvador Bahia
+Lapinha Salvador Bahia/7,3 km/17 min
+Pau Miúdo Salvador Bahia/9,1 km/18 min
+Arenoso Salvador Bahia/16,2 km/27 min
+São Cristóvão Salvador Bahia/26,0 km/34 min
+Santa Mônica Salvador Bahia/6,5 km/20 min
+Jardim Cajazeiras Salvador Bahia/16,3 km/24 min
+São Tomé Salvador Bahia/28,8 km/40 min
+Retiro Salvador Bahia/11,4 km/21 min
+Praia Grande Salvador Bahia/12,7 km/27 min
+Vitória Salvador Bahia/10,6 km/19 min
+Liberdade Salvador Bahia/7,3 km/17 min
+São Rafael Salvador Bahia/18,6 km/28 min
+Brotas Salvador Bahia
+Stella Maris Salvador Bahia/23,8 km/29 min
+Ondina Salvador Bahia/4,6 km/12 min
+Amaralina Salvador Bahia/8,6 km/20 min
+Porto Seco Pirajá Salvador Bahia/19,6 km/22 min
+Jardim Cajazeiras Salvador Bahia/14,5 km/21 min
+Rio Vermelho Salvador Bahia/6,0 km/16 min
+Pituaçu Salvador Bahia/13,4 km/24 min
+São Rafael Salvador Bahia/15,4 km/22 min
+Tororó Salvador Bahia/3,5 km/13 min
+Vale dos Lagos Salvador Bahia/20,5 km/27 min
+Federação Salvador Bahia/3,1 km/9 min
+Uruguai Salvador Bahia/7,0 km/17 min
+Cabula Salvador Bahia
+Ribeira Salvador Bahia/11,3 km/25 min
+Santa Mônica Salvador Bahia/6,2 km/11 min
+Pau Miúdo Salvador Bahia/6,6 km/11 min
+Plataforma Salvador Bahia/16,0 km/25 min
+Valéria Salvador Bahia/16,8 km/20 min
+Amaralina Salvador Bahia/10,3 km/17 min
+São Cristóvão Salvador Bahia/17,7 km/20 min
+São Tomé Salvador Bahia/23,5 km/32 min
+Trobogy Salvador Bahia/14,3 km/17 min
+Vale dos Lagos Salvador Bahia/14,4 km/22 min
+Periperi Salvador Bahia/20,3 km/28 min
+Liberdade Salvador Bahia/10,7 km/17 min
+Nazaré Salvador Bahia
+Vale das Pedrinhas Salvador Bahia/7,2 km/14 min
+Vitória Salvador Bahia/4,4 km/8 min
+Imbuí Salvador Bahia/9,6 km/12 min
+Resgate Salvador Bahia/6,7 km/11 min
+Massaranduba Salvador Bahia/8,1 km/21 min
+Mares Salvador Bahia/6,6 km/15 min
+Rio Sena Salvador Bahia/14,3 km/28 min
+Porto Seco Pirajá Salvador Bahia/17,8 km/18 min
+Ribeira Salvador Bahia/8,2 km/20 min
+Pituba Salvador Bahia/9,8 km/15 min
+Santa Mônica Salvador Bahia/7,7 km/13 min
+Santa Luzia Salvador Bahia/5,2 km/11 min
+Imbuí Salvador Bahia
+Retiro Salvador Bahia/6,8 km/9 min
+Pituba Salvador Bahia/7,0 km/11 min
+Pituaçu Salvador Bahia/7,0 km/13 min
+Rio Vermelho Salvador Bahia/10,0 km/18 min
+São Caetano Salvador Bahia/11,3 km/16 min
+Marechal Rondon Salvador Bahia/12,0 km/17 min
+Arenoso Salvador Bahia/6,6 km/12 min
+São Cristóvão Salvador Bahia/16,5 km/19 min
+Liberdade Salvador Bahia/9,5 km/16 min
+Federação Salvador Bahia/11,5 km/16 min
+Praia Grande Salvador Bahia/21,3 km/29 min
+Periperi Salvador Bahia/21,1 km/28 min
+IAPI Salvador Bahia
+Graça Salvador Bahia/12,6 km/22 min
+Ribeira Salvador Bahia/10,1 km/23 min
+Pituaçu Salvador Bahia/10,0 km/18 min
+Sete de Abril Salvador Bahia/9,6 km/19 min
+Rio Sena Salvador Bahia/15,2 km/29 min
+Santa Mônica Salvador Bahia/0,8 km/3 min
+São Tomé Salvador Bahia/20,2 km/30 min
+São Rafael Salvador Bahia/12,1 km/16 min
+Liberdade Salvador Bahia/3,0 km/12 min
+Jardim Cajazeiras Salvador Bahia/7,7 km/15 min
+Imbuí Salvador Bahia/8,0 km/11 min
+Bonfim Salvador Bahia/9,3 km/20 min
+Graça Salvador Bahia
+Santa Luzia Salvador Bahia/6,3 km/14 min
+Santa Mônica Salvador Bahia/11,9 km/21 min
+Vitória Salvador Bahia/1,2 km/3 min
+Tororó Salvador Bahia/4,5 km/16 min
+Amaralina Salvador Bahia/8,4 km/19 min
+Mangueira Salvador Bahia/9,9 km/22 min
+Sete de Abril Salvador Bahia/18,8 km/28 min
+Periperi Salvador Bahia/17,8 km/34 min
+Areia Branca Salvador Bahia/38,4 km/40 min
+Vale das Pedrinhas Salvador Bahia/6,6 km/14 min
+Bonfim Salvador Bahia/10,1 km/23 min
+Itapuã Salvador Bahia/26,5 km/34 min
+Federação Salvador Bahia
+Rio Vermelho Salvador Bahia/2,9 km/7 min
+Porto Seco Pirajá Salvador Bahia/20,8 km/23 min
+Uruguai Salvador Bahia/8,9 km/16 min
+Piatã Salvador Bahia/19,0 km/30 min
+Amaralina Salvador Bahia/6,2 km/14 min
+São Cristóvão Salvador Bahia/24,1 km/29 min
+Graça Salvador Bahia/2,8 km/8 min
+Massaranduba Salvador Bahia/10,9 km/24 min
+Stella Maris Salvador Bahia/25,0 km/30 min
+Cabula Salvador Bahia/9,8 km/14 min
+Arenoso Salvador Bahia/14,3 km/22 min
+Valéria Salvador Bahia/21,6 km/25 min
+Itapuã Salvador Bahia
+Rio Sena Salvador Bahia/33,2 km/44 min
+Arenoso Salvador Bahia/15,3 km/20 min
+Brotas Salvador Bahia/23,2 km/27 min
+Cabula Salvador Bahia/19,8 km/23 min
+Pituaçu Salvador Bahia/8,8 km/15 min
+Vale dos Lagos Salvador Bahia/15,8 km/23 min
+Porto Seco Pirajá Salvador Bahia/29,5 km/27 min
+Vitória Salvador Bahia/27,0 km/32 min
+Periperi Salvador Bahia/29,8 km/38 min
+Lapinha Salvador Bahia/22,9 km/30 min
+Mares Salvador Bahia/25,2 km/33 min
+Massaranduba Salvador Bahia/24,7 km/39 min
+Jardim Cajazeiras Salvador Bahia
+São Tomé Salvador Bahia/15,1 km/26 min
+São Cristóvão Salvador Bahia/16,9 km/30 min
+Pituaçu Salvador Bahia/16,0 km/25 min
+Amaralina Salvador Bahia/17,6 km/25 min
+Piatã Salvador Bahia/16,9 km/29 min
+Itapuã Salvador Bahia/18,2 km/32 min
+Mares Salvador Bahia/15,0 km/22 min
+Vitória Salvador Bahia/17,4 km/24 min
+Pau Miúdo Salvador Bahia/7,9 km/14 min
+Rio Sena Salvador Bahia/10,0 km/24 min
+Ribeira Salvador Bahia/16,6 km/27 min
+Stella Maris Salvador Bahia/17,8 km/30 min
+Lapinha Salvador Bahia
+Pituaçu Salvador Bahia/13,2 km/24 min
+Jardim Cajazeiras Salvador Bahia/13,1 km/19 min
+Mares Salvador Bahia/5,3 km/14 min
+Federação Salvador Bahia/6,6 km/16 min
+São Tomé Salvador Bahia/25,6 km/35 min
+Trobogy Salvador Bahia/19,3 km/26 min
+Vale das Pedrinhas Salvador Bahia/12,1 km/21 min
+Itapuã Salvador Bahia/24,0 km/31 min
+Stella Maris Salvador Bahia/23,7 km/29 min
+Santa Luzia Salvador Bahia/10,0 km/16 min
+Liberdade Salvador Bahia/1 m/1 min
+Brotas Salvador Bahia/9,2 km/15 min
+Liberdade Salvador Bahia
+Rio Sena Salvador Bahia/13,0 km/26 min
+Trobogy Salvador Bahia/19,3 km/26 min
+Vitória Salvador Bahia/8,1 km/18 min
+Federação Salvador Bahia/6,6 km/16 min
+Bonfim Salvador Bahia/6,1 km/16 min
+Resgate Salvador Bahia/6,6 km/13 min
+Santa Mônica Salvador Bahia/2,7 km/11 min
+Piatã Salvador Bahia/20,7 km/28 min
+Tororó Salvador Bahia/4,9 km/15 min
+Arenoso Salvador Bahia/12,9 km/22 min
+São Tomé Salvador Bahia/25,6 km/35 min
+Ribeira Salvador Bahia/6,9 km/19 min
+Mangueira Salvador Bahia
+Liberdade Salvador Bahia/3,5 km/12 min
+Stella Maris Salvador Bahia/23,5 km/31 min
+Arenoso Salvador Bahia/12,8 km/24 min
+Massaranduba Salvador Bahia/1,9 km/9 min
+Santa Luzia Salvador Bahia/12,2 km/21 min
+Resgate Salvador Bahia/7,0 km/20 min
+Bonfim Salvador Bahia/2,3 km/10 min
+São Caetano Salvador Bahia/4,3 km/15 min
+Rio Sena Salvador Bahia/10,4 km/22 min
+Pau Miúdo Salvador Bahia/5,4 km/15 min
+Vitória Salvador Bahia/10,7 km/20 min
+Pituba Salvador Bahia/13,7 km/24 min
+Marechal Rondon Salvador Bahia
+Mangueira Salvador Bahia/5,6 km/18 min
+Bonfim Salvador Bahia/8,7 km/24 min
+Santa Luzia Salvador Bahia/14,1 km/20 min
+Vitória Salvador Bahia/17,2 km/24 min
+Rio Vermelho Salvador Bahia/16,8 km/28 min
+Nazaré Salvador Bahia/13,8 km/18 min
+Sete de Abril Salvador Bahia/5,3 km/14 min
+Arenoso Salvador Bahia/7,3 km/22 min
+Plataforma Salvador Bahia/5,6 km/16 min
+Santa Mônica Salvador Bahia/7,8 km/15 min
+Areia Branca Salvador Bahia/25,3 km/28 min
+Pituba Salvador Bahia/15,5 km/23 min
+Mares Salvador Bahia
+Valéria Salvador Bahia/20,6 km/24 min
+Stella Maris Salvador Bahia/25,4 km/30 min
+Graça Salvador Bahia/8,4 km/14 min
+Imbuí Salvador Bahia/12,9 km/18 min
+Areia Branca Salvador Bahia/36,3 km/36 min
+São Caetano Salvador Bahia/5,4 km/18 min
+Itapuã Salvador Bahia/25,7 km/32 min
+Ribeira Salvador Bahia/4,5 km/14 min
+Federação Salvador Bahia/9,4 km/15 min
+Lapinha Salvador Bahia/5,7 km/13 min
+Pau Miúdo Salvador Bahia/7,5 km/14 min
+Pirajá Salvador Bahia/8,8 km/20 min
+Massaranduba Salvador Bahia
+Porto Seco Pirajá Salvador Bahia/17,4 km/31 min
+Tororó Salvador Bahia/10,3 km/26 min
+IAPI Salvador Bahia/6,6 km/20 min
+Federação Salvador Bahia/12,6 km/25 min
+Periperi Salvador Bahia/12,8 km/29 min
+Piatã Salvador Bahia/22,1 km/37 min
+São Cristóvão Salvador Bahia/24,2 km/37 min
+Brotas Salvador Bahia/11,5 km/24 min
+São Caetano Salvador Bahia/5,9 km/22 min
+Valéria Salvador Bahia/18,2 km/33 min
+Uruguai Salvador Bahia/2,9 km/10 min
+Jardim Cajazeiras Salvador Bahia/12,4 km/29 min
+Ondina Salvador Bahia
+Porto Seco Pirajá Salvador Bahia/22,4 km/28 min
+Rio Sena Salvador Bahia/20,3 km/37 min
+Imbuí Salvador Bahia/12,0 km/19 min
+Vale dos Lagos Salvador Bahia/20,2 km/33 min
+São Cristóvão Salvador Bahia/23,5 km/31 min
+Mangueira Salvador Bahia/13,2 km/26 min
+Resgate Salvador Bahia/11,3 km/22 min
+Trobogy Salvador Bahia/20,1 km/28 min
+Valéria Salvador Bahia/23,1 km/30 min
+Itapuã Salvador Bahia/24,8 km/33 min
+Periperi Salvador Bahia/21,1 km/37 min
+Pituaçu Salvador Bahia/15,8 km/27 min
+Piatã Salvador Bahia
+IAPI Salvador Bahia/18,3 km/21 min
+Itapuã Salvador Bahia/8,6 km/12 min
+Stella Maris Salvador Bahia/8,3 km/10 min
+Porto Seco Pirajá Salvador Bahia/20,4 km/30 min
+Valéria Salvador Bahia/28,2 km/28 min
+Vale dos Lagos Salvador Bahia/13,8 km/21 min
+Jardim Cajazeiras Salvador Bahia/13,8 km/26 min
+Periperi Salvador Bahia/24,6 km/40 min
+Santa Luzia Salvador Bahia/18,7 km/21 min
+Mares Salvador Bahia/23,2 km/31 min
+Pituba Salvador Bahia/13,6 km/20 min
+Lapinha Salvador Bahia/20,8 km/27 min
+Pirajá Salvador Bahia
+São Rafael Salvador Bahia/7,0 km/22 min
+Uruguai Salvador Bahia/6,7 km/18 min
+Plataforma Salvador Bahia/4,2 km/10 min
+Bonfim Salvador Bahia/9,8 km/26 min
+Cabula Salvador Bahia/9,1 km/16 min
+Rio Sena Salvador Bahia/6,7 km/15 min
+Stella Maris Salvador Bahia/27,1 km/34 min
+Itapuã Salvador Bahia/31,4 km/36 min
+Amaralina Salvador Bahia/18,3 km/29 min
+Brotas Salvador Bahia/14,3 km/21 min
+Sete de Abril Salvador Bahia/5,2 km/14 min
+Arenoso Salvador Bahia/9,4 km/25 min
+Pituaçu Salvador Bahia
+Mangueira Salvador Bahia/13,4 km/26 min
+Resgate Salvador Bahia/11,3 km/19 min
+São Rafael Salvador Bahia/6,0 km/12 min
+Retiro Salvador Bahia/10,5 km/17 min
+Uruguai Salvador Bahia/12,2 km/21 min
+Graça Salvador Bahia/17,9 km/30 min
+Pituba Salvador Bahia/6,8 km/12 min
+Lapinha Salvador Bahia/13,3 km/24 min
+Areia Branca Salvador Bahia/22,7 km/27 min
+Ribeira Salvador Bahia/15,8 km/33 min
+São Tomé Salvador Bahia/28,0 km/39 min
+Itapuã Salvador Bahia/8,2 km/15 min
+Pituba Salvador Bahia
+Lapinha Salvador Bahia/12,0 km/23 min
+IAPI Salvador Bahia/10,7 km/19 min
+Nazaré Salvador Bahia/11,2 km/19 min
+Pirajá Salvador Bahia/17,4 km/25 min
+Arenoso Salvador Bahia/9,5 km/19 min
+Brotas Salvador Bahia/9,7 km/19 min
+Pituaçu Salvador Bahia/8,4 km/14 min
+Jardim Cajazeiras Salvador Bahia/16,4 km/24 min
+São Cristóvão Salvador Bahia/19,4 km/26 min
+Cabula Salvador Bahia/10,5 km/18 min
+São Rafael Salvador Bahia/11,9 km/19 min
+Plataforma Salvador Bahia/21,4 km/34 min
+Plataforma Salvador Bahia
+Mares Salvador Bahia/8,4 km/17 min
+Amaralina Salvador Bahia/19,7 km/33 min
+Imbuí Salvador Bahia/15,9 km/26 min
+Jardim Cajazeiras Salvador Bahia/7,8 km/21 min
+São Rafael Salvador Bahia/11,9 km/28 min
+Federação Salvador Bahia/15,7 km/27 min
+São Tomé Salvador Bahia/11,0 km/21 min
+Porto Seco Pirajá Salvador Bahia/13,3 km/20 min
+Massaranduba Salvador Bahia/7,6 km/19 min
+Rio Sena Salvador Bahia/2,5 km/5 min
+Areia Branca Salvador Bahia/26,6 km/37 min
+Valéria Salvador Bahia/10,9 km/23 min
+Porto Seco Pirajá Salvador Bahia
+Valéria Salvador Bahia/8,7 km/12 min
+Mares Salvador Bahia/13,6 km/17 min
+Santa Mônica Salvador Bahia/6,6 km/9 min
+Praia Grande Salvador Bahia/10,2 km/23 min
+Pituaçu Salvador Bahia/14,6 km/20 min
+Rio Vermelho Salvador Bahia/15,6 km/22 min
+Vale das Pedrinhas Salvador Bahia/15,0 km/18 min
+Santa Luzia Salvador Bahia/12,9 km/14 min
+Brotas Salvador Bahia/12,2 km/13 min
+Itapuã Salvador Bahia/25,3 km/27 min
+Lapinha Salvador Bahia/11,2 km/15 min
+Arenoso Salvador Bahia/7,3 km/17 min
+Praia Grande Salvador Bahia
+Periperi Salvador Bahia/1,0 km/3 min
+Ribeira Salvador Bahia/12,8 km/29 min
+Nazaré Salvador Bahia/22,8 km/28 min
+Imbuí Salvador Bahia/22,8 km/30 min
+São Rafael Salvador Bahia/15,5 km/30 min
+Areia Branca Salvador Bahia/23,2 km/33 min
+Federação Salvador Bahia/24,1 km/32 min
+Rio Vermelho Salvador Bahia/25,8 km/38 min
+Uruguai Salvador Bahia/10,4 km/20 min
+Vale das Pedrinhas Salvador Bahia/25,2 km/35 min
+Stella Maris Salvador Bahia/30,6 km/40 min
+Vale dos Lagos Salvador Bahia/12,1 km/23 min
+Resgate Salvador Bahia
+Mangueira Salvador Bahia/7,0 km/20 min
+Itapuã Salvador Bahia/22,1 km/30 min
+Cabula Salvador Bahia/3,7 km/11 min
+Amaralina Salvador Bahia/11,6 km/22 min
+Vale dos Lagos Salvador Bahia/16,8 km/25 min
+Bonfim Salvador Bahia/9,3 km/20 min
+Retiro Salvador Bahia/4,1 km/12 min
+Praia Grande Salvador Bahia/16,7 km/32 min
+Uruguai Salvador Bahia/5,7 km/16 min
+Nazaré Salvador Bahia/7,9 km/14 min
+Trobogy Salvador Bahia/17,4 km/25 min
+Pau Miúdo Salvador Bahia/3,5 km/10 min
+Retiro Salvador Bahia
+Stella Maris Salvador Bahia/22,2 km/27 min
+Santa Luzia Salvador Bahia/9,8 km/18 min
+Mangueira Salvador Bahia/6,3 km/18 min
+Jardim Cajazeiras Salvador Bahia/5,6 km/10 min
+Periperi Salvador Bahia/14,9 km/22 min
+Mares Salvador Bahia/7,9 km/21 min
+Pirajá Salvador Bahia/6,6 km/10 min
+Lapinha Salvador Bahia/5,6 km/18 min
+Itapuã Salvador Bahia/22,5 km/29 min
+Amaralina Salvador Bahia/13,1 km/24 min
+Marechal Rondon Salvador Bahia/5,8 km/12 min
+Trobogy Salvador Bahia/11,6 km/24 min
+Ribeira Salvador Bahia
+Imbuí Salvador Bahia/13,3 km/28 min
+Amaralina Salvador Bahia/18,3 km/34 min
+Porto Seco Pirajá Salvador Bahia/23,1 km/32 min
+São Cristóvão Salvador Bahia/24,8 km/40 min
+Uruguai Salvador Bahia/3,4 km/13 min
+Trobogy Salvador Bahia/21,4 km/37 min
+Arenoso Salvador Bahia/15,0 km/33 min
+São Tomé Salvador Bahia/30,5 km/45 min
+Vitória Salvador Bahia/12,3 km/24 min
+São Caetano Salvador Bahia/6,5 km/24 min
+Periperi Salvador Bahia/13,9 km/31 min
+Resgate Salvador Bahia/11,6 km/24 min
+Rio Sena Salvador Bahia
+Piatã Salvador Bahia/33,6 km/43 min
+Amaralina Salvador Bahia/27,8 km/39 min
+Mangueira Salvador Bahia/8,8 km/20 min
+Vale das Pedrinhas Salvador Bahia/26,6 km/37 min
+Tororó Salvador Bahia/16,2 km/35 min
+Brotas Salvador Bahia/23,7 km/32 min
+Lapinha Salvador Bahia/11,1 km/27 min
+IAPI Salvador Bahia/17,6 km/26 min
+Federação Salvador Bahia/18,6 km/34 min
+Plataforma Salvador Bahia/2,8 km/8 min
+Itapuã Salvador Bahia/32,4 km/43 min
+Sete de Abril Salvador Bahia/16,0 km/29 min
+Rio Vermelho Salvador Bahia
+Liberdade Salvador Bahia/9,7 km/21 min
+São Caetano Salvador Bahia/15,3 km/25 min
+Jardim Cajazeiras Salvador Bahia/15,8 km/25 min
+Pirajá Salvador Bahia/16,8 km/25 min
+Praia Grande Salvador Bahia/20,1 km/38 min
+IAPI Salvador Bahia/10,1 km/20 min
+Uruguai Salvador Bahia/11,4 km/22 min
+Cabula Salvador Bahia/9,8 km/18 min
+Mares Salvador Bahia/12,0 km/25 min
+Vale das Pedrinhas Salvador Bahia/2,5 km/7 min
+Amaralina Salvador Bahia/4,0 km/12 min
+Arenoso Salvador Bahia/12,1 km/22 min
+São Caetano Salvador Bahia
+Praia Grande Salvador Bahia/9,5 km/23 min
+Rio Vermelho Salvador Bahia/13,7 km/22 min
+Imbuí Salvador Bahia/10,6 km/13 min
+São Cristóvão Salvador Bahia/22,1 km/25 min
+Pau Miúdo Salvador Bahia/4,6 km/9 min
+Santa Mônica Salvador Bahia/4,7 km/9 min
+Arenoso Salvador Bahia/6,0 km/17 min
+Pituaçu Salvador Bahia/12,6 km/20 min
+Santa Luzia Salvador Bahia/11,0 km/14 min
+Liberdade Salvador Bahia/9,3 km/14 min
+Cabula Salvador Bahia/5,0 km/8 min
+Periperi Salvador Bahia/9,8 km/23 min
+São Cristóvão Salvador Bahia
+Pituaçu Salvador Bahia/12,5 km/14 min
+Pirajá Salvador Bahia/25,8 km/29 min
+Stella Maris Salvador Bahia/5,3 km/7 min
+Santa Mônica Salvador Bahia/20,0 km/24 min
+Resgate Salvador Bahia/20,4 km/24 min
+Graça Salvador Bahia/27,0 km/34 min
+Trobogy Salvador Bahia/9,3 km/11 min
+Amaralina Salvador Bahia/21,9 km/26 min
+Federação Salvador Bahia/24,5 km/28 min
+Marechal Rondon Salvador Bahia/19,0 km/29 min
+Brotas Salvador Bahia/22,8 km/25 min
+São Tomé Salvador Bahia/29,8 km/34 min
+São Rafael Salvador Bahia
+Brotas Salvador Bahia/14,5 km/19 min
+São Cristóvão Salvador Bahia/11,4 km/18 min
+Uruguai Salvador Bahia/13,1 km/20 min
+IAPI Salvador Bahia/11,6 km/16 min
+Nazaré Salvador Bahia/14,9 km/18 min
+Praia Grande Salvador Bahia/15,5 km/30 min
+Periperi Salvador Bahia/15,3 km/29 min
+Pau Miúdo Salvador Bahia/11,5 km/16 min
+Stella Maris Salvador Bahia/12,3 km/18 min
+Liberdade Salvador Bahia/14,1 km/22 min
+Arenoso Salvador Bahia/6,6 km/13 min
+Imbuí Salvador Bahia/7,0 km/10 min
+São Tomé Salvador Bahia
+Pau Miúdo Salvador Bahia/19,7 km/28 min
+Resgate Salvador Bahia/21,6 km/33 min
+Pituaçu Salvador Bahia/27,7 km/39 min
+Valéria Salvador Bahia/10,8 km/22 min
+Sete de Abril Salvador Bahia/17,5 km/30 min
+Ondina Salvador Bahia/28,5 km/38 min
+Amaralina Salvador Bahia/29,3 km/40 min
+Trobogy Salvador Bahia/20,0 km/37 min
+Retiro Salvador Bahia/18,6 km/27 min
+Rio Vermelho Salvador Bahia/28,8 km/41 min
+Lapinha Salvador Bahia/24,4 km/34 min
+Graça Salvador Bahia/29,5 km/41 min
+Sete de Abril Salvador Bahia
+Plataforma Salvador Bahia/9,0 km/22 min
+Uruguai Salvador Bahia/12,0 km/22 min
+São Rafael Salvador Bahia/3,3 km/8 min
+Piatã Salvador Bahia/14,2 km/21 min
+Marechal Rondon Salvador Bahia/5,0 km/14 min
+Ondina Salvador Bahia/18,5 km/28 min
+Stella Maris Salvador Bahia/15,1 km/23 min
+Ribeira Salvador Bahia/18,3 km/31 min
+Liberdade Salvador Bahia/14,3 km/23 min
+Praia Grande Salvador Bahia/13,7 km/27 min
+São Caetano Salvador Bahia/6,8 km/15 min
+Itapuã Salvador Bahia/15,4 km/24 min
+Stella Maris Salvador Bahia
+Rio Vermelho Salvador Bahia/25,4 km/34 min
+São Cristóvão Salvador Bahia/5,5 km/8 min
+Sete de Abril Salvador Bahia/15,3 km/23 min
+Praia Grande Salvador Bahia/32,2 km/42 min
+São Rafael Salvador Bahia/13,7 km/17 min
+Graça Salvador Bahia/29,4 km/38 min
+Liberdade Salvador Bahia/24,8 km/32 min
+Nazaré Salvador Bahia/25,6 km/28 min
+Amaralina Salvador Bahia/24,2 km/30 min
+Plataforma Salvador Bahia/25,3 km/41 min
+Vale das Pedrinhas Salvador Bahia/24,7 km/30 min
+Vale dos Lagos Salvador Bahia/17,8 km/25 min
+Trobogy Salvador Bahia
+Retiro Salvador Bahia/13,4 km/18 min
+Porto Seco Pirajá Salvador Bahia/12,4 km/23 min
+Marechal Rondon Salvador Bahia/9,1 km/24 min
+IAPI Salvador Bahia/13,6 km/19 min
+Arenoso Salvador Bahia/8,6 km/15 min
+Mares Salvador Bahia/18,5 km/28 min
+Stella Maris Salvador Bahia/12,7 km/17 min
+Vale das Pedrinhas Salvador Bahia/16,0 km/23 min
+Uruguai Salvador Bahia/15,1 km/23 min
+Cabula Salvador Bahia/13,1 km/18 min
+São Cristóvão Salvador Bahia/11,8 km/17 min
+Rio Sena Salvador Bahia/15,6 km/37 min
+Uruguai Salvador Bahia
+Stella Maris Salvador Bahia/22,3 km/27 min
+Pau Miúdo Salvador Bahia/4,2 km/11 min
+Imbuí Salvador Bahia/9,8 km/15 min
+Bonfim Salvador Bahia/3,6 km/9 min
+Sete de Abril Salvador Bahia/11,4 km/22 min
+Valéria Salvador Bahia/15,3 km/22 min
+São Tomé Salvador Bahia/17,7 km/34 min
+Mangueira Salvador Bahia/1,3 km/4 min
+Nazaré Salvador Bahia/7,7 km/14 min
+Porto Seco Pirajá Salvador Bahia/14,5 km/20 min
+Vale das Pedrinhas Salvador Bahia/13,1 km/22 min
+Piatã Salvador Bahia/19,3 km/26 min
+Vale das Pedrinhas Salvador Bahia
+Retiro Salvador Bahia/12,0 km/19 min
+Piatã Salvador Bahia/15,8 km/26 min
+Vitória Salvador Bahia/7,4 km/14 min
+Lapinha Salvador Bahia/10,9 km/22 min
+Praia Grande Salvador Bahia/25,5 km/37 min
+Mangueira Salvador Bahia/14,9 km/27 min
+Imbuí Salvador Bahia/9,0 km/15 min
+Pau Miúdo Salvador Bahia/9,0 km/16 min
+Stella Maris Salvador Bahia/21,4 km/27 min
+São Rafael Salvador Bahia/13,1 km/20 min
+Tororó Salvador Bahia/9,0 km/20 min
+Arenoso Salvador Bahia/10,7 km/19 min
+Vale dos Lagos Salvador Bahia
+Federação Salvador Bahia/21,7 km/29 min
+Valéria Salvador Bahia/9,0 km/17 min
+Pau Miúdo Salvador Bahia/14,3 km/22 min
+Liberdade Salvador Bahia/19,1 km/28 min
+São Cristóvão Salvador Bahia/15,6 km/26 min
+Brotas Salvador Bahia/20,0 km/26 min
+Amaralina Salvador Bahia/17,9 km/30 min
+Itapuã Salvador Bahia/16,8 km/28 min
+Stella Maris Salvador Bahia/16,5 km/26 min
+Santa Mônica Salvador Bahia/14,5 km/23 min
+Jardim Cajazeiras Salvador Bahia/4,7 km/15 min
+Pituaçu Salvador Bahia/12,8 km/23 min
+Valéria Salvador Bahia
+Pituaçu Salvador Bahia/20,8 km/27 min
+Itapuã Salvador Bahia/26,5 km/29 min
+Marechal Rondon Salvador Bahia/8,4 km/13 min
+Tororó Salvador Bahia/20,5 km/26 min
+Liberdade Salvador Bahia/17,4 km/21 min
+Piatã Salvador Bahia/28,2 km/31 min
+Cabula Salvador Bahia/13,2 km/15 min
+Graça Salvador Bahia/22,6 km/29 min
+São Tomé Salvador Bahia/10,8 km/21 min
+São Caetano Salvador Bahia/9,9 km/13 min
+Plataforma Salvador Bahia/11,0 km/24 min
+Uruguai Salvador Bahia/15,1 km/20 min
+Vitória Salvador Bahia
+Cabula Salvador Bahia/10,3 km/16 min
+Retiro Salvador Bahia/11,3 km/20 min
+Santa Mônica Salvador Bahia/8,2 km/20 min
+Tororó Salvador Bahia/3,4 km/13 min
+Stella Maris Salvador Bahia/26,8 km/32 min
+Areia Branca Salvador Bahia/37,8 km/39 min
+Lapinha Salvador Bahia/7,2 km/16 min
+Itapuã Salvador Bahia/27,1 km/33 min
+Liberdade Salvador Bahia/7,2 km/16 min
+Nazaré Salvador Bahia/5,4 km/8 min
+Mangueira Salvador Bahia/8,7 km/19 min
+Jardim Cajazeiras Salvador Bahia/16,3 km/23 min
+Tororó Salvador Bahia
+Pituba Salvador Bahia/11,1 km/20 min
+Imbuí Salvador Bahia/10,9 km/17 min
+Liberdade Salvador Bahia/4,9 km/15 min
+Graça Salvador Bahia/4,0 km/12 min
+Pirajá Salvador Bahia/15,1 km/21 min
+Porto Seco Pirajá Salvador Bahia/19,1 km/23 min
+Rio Vermelho Salvador Bahia/5,9 km/17 min
+São Cristóvão Salvador Bahia/22,4 km/29 min
+São Tomé Salvador Bahia/26,6 km/36 min
+Sete de Abril Salvador Bahia/16,0 km/25 min
+Santa Mônica Salvador Bahia/9,1 km/18 min
+Valéria Salvador Bahia/19,9 km/24 min
+Santa Luzia Salvador Bahia
+Uruguai Salvador Bahia/10,9 km/19 min
+Ondina Salvador Bahia/4,2 km/9 min
+Ribeira Salvador Bahia/13,0 km/26 min
+Piatã Salvador Bahia/15,4 km/24 min
+São Rafael Salvador Bahia/12,7 km/18 min
+Resgate Salvador Bahia/9,1 km/16 min
+Cabula Salvador Bahia/6,6 km/14 min
+Sete de Abril Salvador Bahia/14,5 km/25 min
+Lapinha Salvador Bahia/9,2 km/18 min
+Periperi Salvador Bahia/21,9 km/33 min
+São Cristóvão Salvador Bahia/20,1 km/25 min
+Vale das Pedrinhas Salvador Bahia/2,3 km/5 min
+Santa Mônica Salvador Bahia
+Resgate Salvador Bahia/4,0 km/13 min
+Vitória Salvador Bahia/12,3 km/19 min
+Rio Sena Salvador Bahia/12,3 km/29 min
+Mares Salvador Bahia/6,2 km/18 min
+Pirajá Salvador Bahia/8,8 km/16 min
+Retiro Salvador Bahia/2,8 km/9 min
+Pau Miúdo Salvador Bahia/1,1 km/5 min
+Arenoso Salvador Bahia/9,8 km/17 min
+Federação Salvador Bahia/10,2 km/17 min
+Itapuã Salvador Bahia/20,9 km/26 min
+Pituaçu Salvador Bahia/10,1 km/19 min
+Amaralina Salvador Bahia/11,9 km/21 min
+Pau Miúdo Salvador Bahia
+Valéria Salvador Bahia/14,2 km/19 min
+São Cristóvão Salvador Bahia/19,5 km/23 min
+São Caetano Salvador Bahia/7,9 km/15 min
+São Rafael Salvador Bahia/12,0 km/17 min
+Uruguai Salvador Bahia/5,0 km/13 min
+Retiro Salvador Bahia/3,4 km/8 min
+Vitória Salvador Bahia/9,9 km/17 min
+Lapinha Salvador Bahia/4,8 km/12 min
+Santa Luzia Salvador Bahia/6,8 km/11 min
+Massaranduba Salvador Bahia/8,6 km/21 min
+Resgate Salvador Bahia/3,6 km/10 min
+Praia Grande Salvador Bahia/15,3 km/29 min
+Periperi Salvador Bahia
+Vitória Salvador Bahia/25,9 km/33 min
+Imbuí Salvador Bahia/22,5 km/28 min
+Lapinha Salvador Bahia/11,7 km/25 min
+Ribeira Salvador Bahia/11,8 km/26 min
+Uruguai Salvador Bahia/9,4 km/17 min
+Federação Salvador Bahia/23,8 km/30 min
+Mares Salvador Bahia/11,8 km/23 min
+Marechal Rondon Salvador Bahia/9,0 km/21 min
+Retiro Salvador Bahia/15,5 km/22 min
+Pirajá Salvador Bahia/10,1 km/20 min
+São Caetano Salvador Bahia/13,7 km/21 min
+Pituba Salvador Bahia/24,3 km/32 min
+Pernambués Salvador Bahia
+Areia Branca Salvador Bahia/27,4 km/31 min
+Uruguai Salvador Bahia/8,4 km/17 min
+São Cristóvão Salvador Bahia/17,6 km/22 min
+Piatã Salvador Bahia/13,6 km/21 min
+Valéria Salvador Bahia/17,5 km/22 min
+Periperi Salvador Bahia/21,0 km/30 min
+Pituaçu Salvador Bahia/8,1 km/16 min
+Pirajá Salvador Bahia/12,7 km/18 min
+Trobogy Salvador Bahia/14,2 km/18 min
+Marechal Rondon Salvador Bahia/11,9 km/19 min
+Jardim Cajazeiras Salvador Bahia/11,7 km/18 min
+São Caetano Salvador Bahia/11,2 km/18 min
