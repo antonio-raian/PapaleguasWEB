@@ -1,20 +1,27 @@
 package br.com.uefs.papaleguasweb.controller;
 
 import br.com.uefs.papaleguasweb.exception.EncontraVerticeException;
+import br.com.uefs.papaleguasweb.model.Corrida;
+import br.com.uefs.papaleguasweb.model.GrafoJson;
 import br.com.uefs.papaleguasweb.util.Grafo;
 import br.com.uefs.papaleguasweb.util.MenorCaminho;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Controlador {
     private final Grafo grafo;
+    private final List<Corrida> corridas;
 
     public Controlador() throws FileNotFoundException, IOException, EncontraVerticeException{
         grafo = new Grafo();
+        corridas = new ArrayList<>();
         //lerArquivo();
+        teste();
+        
     }
     
     public void adicionaVertice(String dado) throws EncontraVerticeException{
@@ -61,11 +68,45 @@ public class Controlador {
         }
     }
 
-    public List<String> getVertices(){
-        return grafo.getVertices();
+    public List<String> getBairros(){
+        List<String> str = grafo.getVertices();
+        int i=0;
+        for(String s:str){
+            str.set(i,(s.split(" "))[i]);
+            
+        }
+        return str;
     }
     
     public MenorCaminho menorCaminho(String origem, String destino, boolean condicao){
         return grafo.menorCaminho(origem, destino, condicao);
+    }
+    
+    public void salvaCorrida(Corrida corrida){
+        corridas.add(corrida);
+    }
+    
+    public GrafoJson getGrafoJson(){
+        GrafoJson g = new GrafoJson();
+        
+        g=grafo.getJson();
+        
+        return g;
+    }
+    
+    private void teste() throws EncontraVerticeException{
+        adicionaVertice("A");
+        adicionaVertice("B");
+        adicionaVertice("C");
+        adicionaVertice("D");
+        adicionaVertice("E");
+        
+        adicionaAresta("A", "B", "6", "5");
+        adicionaAresta("A", "C", "4", "8");
+        adicionaAresta("A", "D", "10", "3");
+        adicionaAresta("B", "C", "16", "2");
+        adicionaAresta("B", "D", "20", "10");
+        adicionaAresta("C", "E", "18", "9");
+        adicionaAresta("D", "E", "8", "4");
     }
 }

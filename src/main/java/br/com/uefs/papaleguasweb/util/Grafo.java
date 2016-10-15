@@ -2,6 +2,7 @@ package br.com.uefs.papaleguasweb.util;
 
 
 import br.com.uefs.papaleguasweb.exception.EncontraVerticeException;
+import br.com.uefs.papaleguasweb.model.GrafoJson;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -205,6 +206,16 @@ public class Grafo {
             
     }
 
+    public GrafoJson getJson(){
+        GrafoJson graf = new GrafoJson();
+        
+        graf.setVert(vertices);
+        for(Vertice v:vertices){
+            graf.setArest(v.getArestas());
+        }
+        
+        return graf;
+    }
     
     private Vertice encontraVertice(Object bairro){
         for(Vertice v:vertices){

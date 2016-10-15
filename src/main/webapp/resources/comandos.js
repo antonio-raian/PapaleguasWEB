@@ -5,8 +5,46 @@
  */
 
 
-angular.module("App",[])
-    .controller("ControllerCorrida", function (){
+angular.module("App",[]).value('urlUse','http://localhost:8080/Papaleguas/app/')
+    .controller("ControllerCorrida", function ($http,urlUse){
         var self = this;
-        self.usuario = 'Antonio Raian';
+        self.bairros = [];
+        self.corrida = undefined;
+        self.dados = undefined;
+        
+        self.novo = function(){
+          alert = ("Chegou no Novo!");
+          self.corrida = {};
+        };
+        
+        self.atualizaGrafo = function () {
+            
+        };
+        
+        self.pegaBairros = function () {
+            alert = ("Chegou no pega Bairros!");
+            $http({
+                method:'GET',
+                url: urlUse+"corrida/"
+            }).then(function successCallback(response){
+                self.bairros = response.data;
+            }),then (function errorCallback(response){
+                self.erro();
+            });
+        };
+        
+        self.calcular = function (){};
+        
+        self.alterar = function(){};
+        
+        self.erro = function(){
+            alert = ("Erro da porra!");
+        };
+        
+        self.activate = function (){
+            self.pegaBairros();
+            self.atualizaGrafo();
+        };
+        
+        self.activate();
     });
