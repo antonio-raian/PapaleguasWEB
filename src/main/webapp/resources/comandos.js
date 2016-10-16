@@ -5,7 +5,7 @@
  */
 
 
-angular.module("App",[]).value('urlUse','http://localhost:8080/Papaleguas/app/')
+angular.module("Aplicativo",[]).value('urlUse','http://localhost:8080/Papaleguas/app/')
     .controller("ControllerCorrida", function ($http,urlUse){
         var self = this;
         self.bairros = [];
@@ -31,6 +31,10 @@ angular.module("App",[]).value('urlUse','http://localhost:8080/Papaleguas/app/')
             }),then (function errorCallback(response){
                 self.erro();
             });
+        };
+        
+        self.cancela = function(){
+            self.corrida = undefined;
         };
         
         self.calcular = function (){};

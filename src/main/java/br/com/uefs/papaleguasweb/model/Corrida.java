@@ -54,6 +54,4 @@ public class Corrida {
     public void setValor(double valor) {
         this.valor = valor;
     }
-    
-    
 }

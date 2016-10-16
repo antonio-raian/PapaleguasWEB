@@ -2,7 +2,7 @@ package br.com.uefs.papaleguasweb.controller;
 
 import br.com.uefs.papaleguasweb.exception.EncontraVerticeException;
 import br.com.uefs.papaleguasweb.model.Corrida;
-import br.com.uefs.papaleguasweb.model.GrafoJson;
+import br.com.uefs.papaleguasweb.util.GrafoJson;
 import br.com.uefs.papaleguasweb.util.Grafo;
 import br.com.uefs.papaleguasweb.util.MenorCaminho;
 import java.io.BufferedReader;

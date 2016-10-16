@@ -2,7 +2,6 @@ package br.com.uefs.papaleguasweb.util;
 
 
 import br.com.uefs.papaleguasweb.exception.EncontraVerticeException;
-import br.com.uefs.papaleguasweb.model.GrafoJson;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

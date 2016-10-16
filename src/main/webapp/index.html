@@ -4,23 +4,21 @@
         <title>Papaléguas Corrida</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
-    <body ng-app="App" style="background-color: #40E0D0">
+    <body ng-app="Aplicativo" style="background-color: #0ed356">
+        
         <script src="resources/angular.js"></script>
         <script src="resources/comandos.js"></script>
 
-        
-            <img id="imagem" src="bb26.png" width="40" height="70" alt="bb26"/>
-            <label style="vertical-align: top">
-                <font size='20'>
-                Papaleguas Corrida!
-                </font>
-            </label>
-        
+        <img id="imagem" src="bb26.png" width="40" height="70" alt="bb26"/>
+        <label style="vertical-align: top">
+            <font size='20'>
+            Papaleguas Corrida!
+            </font>
+        </label>
         
         <div ng-controller="ControllerCorrida as controlador">
             <div style="border:2px solid black">
                 <h1>GRAFO!!</h1>
-                {{controlador.atualizaGrafo()}}
             </div>
             <div ng-show="!controlador.corrida">
                 <button type="button" ng-click="controlador.novo()">Novo</button>
@@ -36,7 +34,7 @@
                     <option>{{bairroDestino}}</option>
                 </select>
                 <button type="button" ng-click="controlador.calcular(bairroOrigem,bairroDestino)">Calcular</button>
-                <button type="button" ng-click="controlador.corrida = undefined">Cancelar</button>
+                <button type="button" ng-click="controlador.cancela">Cancelar</button>
             </div>
             <div ng-show="controlador.dados">
                 <h4>Detalhes</h4>

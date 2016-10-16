@@ -1,7 +1,5 @@
-package br.com.uefs.papaleguasweb.model;
+package br.com.uefs.papaleguasweb.util;
 
-import br.com.uefs.papaleguasweb.util.Aresta;
-import br.com.uefs.papaleguasweb.util.Vertice;
 import java.util.ArrayList;
 import java.util.List;
 
