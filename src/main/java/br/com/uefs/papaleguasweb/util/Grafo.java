@@ -96,7 +96,6 @@ public class Grafo {
         List<Double> distVert = new ArrayList<>();//lista das distancias dos vertices
         List<Double> tempVert = new ArrayList<>();//lista dos tempos dos vertice
         double infinito = 9999;
-        double totalCaminho;
         
         
         if (origem.getIdentificador().equals(destino.getIdentificador()))

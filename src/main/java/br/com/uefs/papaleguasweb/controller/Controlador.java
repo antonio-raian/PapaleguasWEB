@@ -1,7 +1,9 @@
 package br.com.uefs.papaleguasweb.controller;
 
 import br.com.uefs.papaleguasweb.exception.EncontraVerticeException;
+import br.com.uefs.papaleguasweb.model.Cliente;
 import br.com.uefs.papaleguasweb.model.Corrida;
+import br.com.uefs.papaleguasweb.model.Motorista;
 import br.com.uefs.papaleguasweb.util.GrafoJson;
 import br.com.uefs.papaleguasweb.util.Grafo;
 import br.com.uefs.papaleguasweb.util.MenorCaminho;
@@ -15,10 +17,14 @@ import java.util.List;
 public class Controlador {
     private final Grafo grafo;
     private final List<Corrida> corridas;
+    private final List<Cliente> clientes;
+    private final List<Motorista> motoristas;
 
     public Controlador() throws FileNotFoundException, IOException, EncontraVerticeException{
         grafo = new Grafo();
         corridas = new ArrayList<>();
+        clientes = new ArrayList<>();
+        motoristas = new ArrayList<>();
         //lerArquivo();
         teste();
         

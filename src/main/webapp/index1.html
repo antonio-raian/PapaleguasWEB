@@ -10,32 +10,31 @@
                 .controller("CorridaCtrl", function ($scope, $http, urlUse){
                     $scope.bairros = [];
                     $scope.corrida = undefined;
+                    $scope.dados = undefined;
 
                     $scope.novo = function(){
                       $scope.corrida = {};
                     };
 
-		    $scope.cancela = function(){
-                      delete $scope.corrida;
-                    };
-
                     $scope.atualizaGrafo = function () {
-                    	console.log = ("Chegou atualizaGrafo");
+
                     };
 
                     $scope.pegaBairros = function () {
-                        console.log = ("Chegou no pega bairros");
+                        alert = ("Chegou no pega Bairros!");
+                        $http({
+                            method:'GET',
+                            url: urlUse+"corrida/"
+                        }).then(function successCallback(response){
+                            $scope.bairros = response.data;
+                        }),then (function errorCallback(response){
+                            $scope.erro();
+                        });
                     };
 
-                    $scope.calcular = function (bairroOrigem,bairroDestino){
-                    	corrida = {origem: bairroOrigem, destino:bairroDestino, distancia:'10m', tempo: '1h', valor:100};
-                    	$scope.corrida = corrida;
-                    	console.log = ("Chegou no calcular");
-                    };
+                    $scope.calcular = function (){};
 
-                    $scope.alterar = function(){
-                    	console.log = ("Chegou no alterar");
-                    };
+                    $scope.alterar = function(){};
 
                     $scope.erro = function(){
                         console.log("Deu ruim!");
@@ -66,26 +65,25 @@
                 {{pegaBairros()}}
                 <button type="button" ng-click="novo()">Novo</button>
             </div>
-            <div style="background-color: #FFFFFF" ng-show="corrida">
+            <div style="background-color: skyblue" ng-show="corrida">
                 <h4>Selecione a origem e o destino</h4>
-                <input type="text" ng-model="corrida.origem" placeholder="Origem">
-                <input type="text" ng-model="corrida.destino" placeholder="Destino">
-                <!--<select id="origemList" ng-repeat="bairroOrigem in bairros">
+                Origem
+                <select id="origemList" ng-repeat="bairroOrigem in bairros">
                     <option>{{bairroOrigem}}</option>
                 </select>
                 Destino
                 <select id="destinoList" ng-repeat="bairroDestino in bairros">
                     <option>{{bairroDestino}}</option>
-                </select>-->
-                <button type="button" ng-click="calcular(corrida.origem,corrida.destino)">Calcular</button>
-                <button type="button" ng-click="cancela()">Cancelar</button>
+                </select>
+                <button type="button" ng-click="calcular(bairroOrigem,bairroDestino)">Calcular</button>
+                <button type="button" ng-click="corrida=undefined">Cancelar</button>
             </div>
-            <div ng-show="corrida.valor">
+            <div ng-show="dados">
                 <h4>Detalhes</h4>
                 Distancia: <input type="text" id="txtDist" ng-model="corrida.distancia" disabled="true">
                 Tempo: <input type="text" id="txtTempo" ng-model="corrida.tempo">
                 Valor: <input type="number" id="txtDist" ng-model="corrida.valor">
-                <br><button type="button" ng-click="alterar(corrida)">Alterar Dados</button>
+                <br><button type="button" ng-click="alterar()">Alterar Dados</button>
             </div>
         </div>
     </body>

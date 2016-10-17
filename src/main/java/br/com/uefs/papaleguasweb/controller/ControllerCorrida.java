@@ -26,6 +26,7 @@ public class ControllerCorrida {
     @Produces(MediaType.APPLICATION_JSON)
     @Path("/")
     public List<String> listBairros(){
+        System.out.println("Chegou aq!");
         return ctrl.getBairros();
     }
     
