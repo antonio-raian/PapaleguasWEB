@@ -76,10 +76,8 @@ public class Controlador {
 
     public List<String> getBairros(){
         List<String> str = grafo.getVertices();
-        int i=0;
         for(String s:str){
-            str.set(i,(s.split(" "))[i]);
-            
+            str.add((s.split(" "))[0]);
         }
         return str;
     }

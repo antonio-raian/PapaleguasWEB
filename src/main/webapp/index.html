@@ -45,8 +45,8 @@
         </style>
         <script>
             angular.module("Aplicativo",[]);
-            angular.module("Aplicativo").value('urlUse','http://localhost:8080/Papaleguas/app/')
-                .controller("CorridaCtrl", function ($scope, $http, urlUse){
+            angular.module("Aplicativo")
+                .controller("CorridaCtrl", function ($scope, $http){
                     $scope.bairros = undefined;
                     $scope.grafo = undefined;   
                     $scope.corrida = undefined;
@@ -57,7 +57,6 @@
                     $scope.novaCorrida = function(){
                         $scope.corrida = {data: new Date(), origem:undefined, destino:undefined, distancia:undefined, tempo: undefined, valorTotal:undefined, valorKm:undefined};
                         $scope.grafo = {};
-                        var focus = document.getElementById('divNovaCorrida').focus();
                     };
 
                     $scope.cancelar = function(){
@@ -72,13 +71,36 @@
                         }else{
                             $scope.corridas.push(corrida);
                         }
-                        $scope.corrida = undefined;
-                        $scope.grafo = undefined;
+                        delete $scope.corrida;
+                        delete $scope.grafo;
                     }
 
-                    $scope.criaGrafo = function () {
+                    $scope.calcular = function (bairroOrigem,bairroDestino, valorKm){
+                        if(bairroOrigem == bairroDestino){
+                            $scope.corrida.distancia = undefined;
+                            $scope.corrida.tempo = undefined;
+                            $scope.corrida.valorKm = undefined;
+                            $scope.corrida.valorTotal = undefined;
+                            $scope.erro();
+                        }else{
+                            $http.get("http://localhost:8080/Papaleguas/app/corrida/grafo/").success(function(data){
+                                $scope.grafo = data;
+                            });
+                        }
+                    };
+
+                    $scope.alterar = function(){
+                        console.log("Chegou no alterar");
+                    };
+
+                    var criaGrafo = function () {
                         console.log("Chegou atualizaGrafo");
-                        d3.json('maya_curricular.json', function(json){
+
+                        $http.get("http://localhost:8080/Papaleguas/app/corrida/grafo/").success(function(data){
+                            $scope.grafo = data;
+                        });
+
+                        d3.json($scope.grafo, function(json){
                             
                             $scope.limpar('divgrafo');
                             //atribui valores padrão à altura e largura
@@ -151,56 +173,28 @@
                         });
                     };
 
-                    $scope.pegaBairros = function () {
-                        d3.json('maya_curricular.json', function(json){
-                            $scope.bairros = json.nodes;
+                    var pegaBairros = function () {
+                        $http.get("http://localhost:8080/Papaleguas/app/corrida/bairros/").success(function(data){
+                            $scope.bairros = data;
                         });
                         console.log("Chegou no pega bairros");
                     };
 
-                    $scope.calcular = function (bairroOrigem,bairroDestino, valorKm){
-                        if(bairroOrigem == bairroDestino){
-                            $scope.corrida.distancia = undefined;
-                            $scope.corrida.tempo = undefined;
-                            $scope.corrida.valorKm = undefined;
-                            $scope.corrida.valorTotal = undefined;
-                            $scope.erro();
-                        }else{
-                            $scope.criaGrafo();
-                            $scope.error = undefined;
-                            if(bairroOrigem== "Aroeira Branca"){
-                                $scope.corrida.distancia = 10;
-                                $scope.corrida.tempo = 20;
-                                $scope.corrida.valorTotal = $scope.corrida.distancia*valorKm;
-                            }else{
-                                $scope.corrida.distancia = 50;
-                                $scope.corrida.tempo = 30;
-                                $scope.corrida.valorTotal = $scope.corrida.distancia*valorKm;
-                            };
-                            console.log("Chegou no calcular");
-                        }
-                    };
-
-                    $scope.alterar = function(){
-                        console.log("Chegou no alterar");
-                    };
-
-                    $scope.erro = function(){
+                    var erro = function(){
                         $scope.error = {};
                         console.log("Deu ruim!");
                     };
 
                     //-----------------------
-                    $scope.start = function(){
-                        $scope.pegaBairros();
-                        $scope.criaGrafo();
+                    var start = function(){
+                        pegaBairros();
                     };
 
-                    $scope.limpar = function(d){
+                    var limpar = function(d){
                         document.getElementById(d).innerHTML = ""; 
                     };
 
-                    $scope.start();
+                    start();
                 });
         </script>
     </head>
@@ -220,6 +214,7 @@
                         Papaleguas Corrida!
                     </font>
             </div>
+            {{bairros}}
             <div ng-show="!corrida && !historico">
                 <button type="button" class="btn" ng-click="novaCorrida()">Nova Corrida</button>
                 <button type="button" class="btn" ng-click="historico={}">Historico de Corridas</button>
@@ -276,7 +271,7 @@
                 <form name="detalhesForm">
                     Distancia: <input type="text" id="txtDist" ng-model="corrida.distancia" disabled="true">
                     Tempo: <input type="text" id="txtTempo" ng-model="corrida.tempo" required="true">
-                    Valor total: <input type="text" id="txtValorTotal" ng-model="corrida.valorTotal | currency" disabled="true">
+                    Valor total: <input type="text" id="txtValorTotal" ng-model="corrida.valorTotal" disabled="true">
                 </form>
                 <button class="btn" type="button" ng-disabled="detalhesForm.$invalid" ng-click="salvar(corrida)">Salvar</button>
             </div>
