@@ -3,11 +3,16 @@ package br.com.uefs.papaleguasweb.util;
 import java.util.ArrayList;
 import java.util.List;
 
+//Classe usada pra armazenar as informações do menor caminho
 public class MenorCaminho {
-    private List<String> caminho;
-    private double distancia;
-    private double tempo;
+    private List<String> caminho; //Lista de vertices do caminho
+    private double distancia;//Distancia percorrida
+    private double tempo;//Tempo gasto
 
+    public MenorCaminho() {
+        caminho = new ArrayList<>();
+    }
+    
     public List<String> getCaminho() {
         return caminho;
     }
@@ -30,9 +35,5 @@ public class MenorCaminho {
 
     public void setTempo(double tempo) {
         this.tempo = tempo;
-    }
-
-    public MenorCaminho() {
-        caminho = new ArrayList<>();
     }
 }

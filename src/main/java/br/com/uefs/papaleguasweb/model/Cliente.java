@@ -1,19 +1,21 @@
 package br.com.uefs.papaleguasweb.model;
 
-import java.util.List;
-
+//Classe modelo para Clientes
 public class Cliente {
-    private static int id=0;
-    private final String nome;
-    private final String senha;
-    private List<Corrida> corridas;
-
-    public Cliente(String nome, String senha) {
-        Cliente.id++;
+    private static int seguencia=0; //Variavel usada para auto-incremento dos id's
+    private final int id;//identificador
+    private String nome;
+    
+    //Construtor com o nome
+    public Cliente(String nome) {
+        this.id = seguencia++;
         this.nome = nome;
-        this.senha = senha;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
     public int getId() {
         return id;
     }
@@ -21,17 +23,4 @@ public class Cliente {
     public String getNome() {
         return nome;
     }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public List<Corrida> getCorridas() {
-        return corridas;
-    }
-
-    public void setCorrida(Corrida corrida) {
-        this.corridas.add(corrida);
-    }   
-    
 }

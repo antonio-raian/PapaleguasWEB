@@ -1,18 +1,31 @@
 package br.com.uefs.papaleguasweb.model;
 
+import java.util.Date;
+
+//Classe modelo para todas as corridas
 public class Corrida {
+    private Date data;
     private String origem, destino, distancia, tempo;
     private double valor;
+    private String cliente; //nome do cliente
+    private String motorista;//nome do motorista
+    private int numeroCarro;//numero do taxi
 
+    //Construtor vazio
     public Corrida() {
     }
 
-    public Corrida(String origem, String destino, String distancia, String tempo, double valor) {
+    //construtor pada todas as informações
+    public Corrida(Date data,String cliente, String motorista,String origem, String destino, String distancia, String tempo, double valor, int numeroCarro) {
+        this.data = data;
+        this.cliente = cliente;
+        this.motorista = motorista;
         this.origem = origem;
         this.destino = destino;
         this.distancia = distancia;
         this.tempo = tempo;
         this.valor = valor;
+        this.numeroCarro = numeroCarro;
     }
    
     public String getOrigem() {
@@ -53,5 +66,37 @@ public class Corrida {
 
     public void setValor(double valor) {
         this.valor = valor;
+    }
+
+    public String getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(String cliente) {
+        this.cliente = cliente;
+    }
+
+    public String getMotorista() {
+        return motorista;
+    }
+
+    public void setMotorista(String motorista) {
+        this.motorista = motorista;
+    }
+
+    public int getNumeroCarro() {
+        return numeroCarro;
+    }
+
+    public void setNumeroCarro(int numeroCarro) {
+        this.numeroCarro = numeroCarro;
+    }
+
+    public Date getData() {
+        return data;
+    }
+
+    public void setData(Date data) {
+        this.data = data;
     }
 }

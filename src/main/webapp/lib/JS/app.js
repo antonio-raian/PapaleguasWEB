@@ -1,0 +1,1 @@
+angular.module("Aplicativo",[]); //Criação do modulo aplicativo usado no aplicativo.js

@@ -1,18 +1,35 @@
 package br.com.uefs.papaleguasweb.model;
 
-import java.util.List;
-
-public class Motorista {
-    private static int id=0;
+//Classe modelo para motoristas
+public class Motorista { 
+    private static int seguencia=0;//Atributo pasa auto-incremento dos id's
+    private final int id; //identificador
     private final String nome;
-    private final String senha;
-    
-    private List<Corrida> corridas;
+    private int numeroCarro;
+    private String bairro; //bairro onde se localiza
 
-    public Motorista(String nome, String senha) {
-        Motorista.id++;
+    //Construtor
+    public Motorista(String nome, int numero, String bairro) {
+        id=seguencia++;
         this.nome = nome;
-        this.senha = senha;
+        numeroCarro = numero;
+        this.bairro = bairro;
+    }
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
+
+    public int getNumeroCarro() {
+        return numeroCarro;
+    }
+
+    public void setNumeroCarro(int numeroCarro) {
+        this.numeroCarro = numeroCarro;
     }
 
     public int getId() {
@@ -21,17 +38,5 @@ public class Motorista {
 
     public String getNome() {
         return nome;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public List<Corrida> getCorridas() {
-        return corridas;
-    }
-    
-    public void setCorrida(Corrida corrida){
-        this.corridas.add(corrida);
     }
 }

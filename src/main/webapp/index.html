@@ -1,204 +1,24 @@
 <!DOCTYPE html>
+<!-- Tela do sistema-->
+<!-- É usado um esquema de vizão e ocultação entre as divs para dar o efeito de tranzição de telas-->
 <html ng-app="Aplicativo">
     <head>
-        <title>Papaléguas Corrida</title>
-        <link rel="stylesheet" type="text/css" href="./resources/BootStrap v3.3.7/css/bootstrap.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script src="./resources/AngularJS/angular.js"></script>
-        <script src="./resources/AngularJS/angular-locale_pt-br.js"></script>
-        <script type="text/javascript" src="./resources/D3js/d3.v2.js"></script>
-        <style type="text/css">
-            .jumbotron{
-                width: auto;
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 0px;
-            }
-            .table{
-                text-align: center;
-                margin-left: 300px;
-                max-width: 730px;
-            }
-            .node {
-                stroke: #000;
-                stroke-width: 3px;
-            }
-            text {
-                color: #000;
-                font: 10px sans-serif;
-            }
-            .link {
-                stroke-opacity: 100;
-                stroke-width: 3;
-            }
-            .btn{
-                color: white;
-                background-color: #239eef;
-            }
-            
-            #divTitulo2 {
-                width: 100%;
-                height: 50px;
-            } 
-
-        </style>
-        <script>
-            angular.module("Aplicativo",[]);
-            angular.module("Aplicativo")
-                .controller("CorridaCtrl", function ($scope, $http){
-                    $scope.bairros = undefined;
-                    $scope.grafo = undefined;   
-                    $scope.corrida = undefined;
-                    $scope.corridas = undefined;
-                    $scope.error = undefined;
-                    $scope.historico = undefined;
-
-                    $scope.novaCorrida = function(){
-                        $scope.corrida = {data: new Date(), origem:undefined, destino:undefined, distancia:undefined, tempo: undefined, valorTotal:undefined, valorKm:undefined};
-                        $scope.grafo = {};
-                    };
-
-                    $scope.cancelar = function(){
-                        delete $scope.corrida;
-                        delete $scope.error;
-                        delete $scope.grafo;
-                    };
-
-                    $scope.salvar = function(corrida){
-                        if(!$scope.corridas){
-                            $scope.corridas = [corrida];
-                        }else{
-                            $scope.corridas.push(corrida);
-                        }
-                        delete $scope.corrida;
-                        delete $scope.grafo;
-                    }
-
-                    $scope.calcular = function (bairroOrigem,bairroDestino, valorKm){
-                        if(bairroOrigem == bairroDestino){
-                            $scope.corrida.distancia = undefined;
-                            $scope.corrida.tempo = undefined;
-                            $scope.corrida.valorKm = undefined;
-                            $scope.corrida.valorTotal = undefined;
-                            $scope.erro();
-                        }else{
-                            $http.get("http://localhost:8080/Papaleguas/app/corrida/grafo/").success(function(data){
-                                $scope.grafo = data;
-                            });
-                        }
-                    };
-
-                    $scope.alterar = function(){
-                        console.log("Chegou no alterar");
-                    };
-
-                    var criaGrafo = function () {
-                        console.log("Chegou atualizaGrafo");
-
-                        $http.get("http://localhost:8080/Papaleguas/app/corrida/grafo/").success(function(data){
-                            $scope.grafo = data;
-                        });
-
-                        d3.json($scope.grafo, function(json){
-                            
-                            $scope.limpar('divgrafo');
-                            //atribui valores padrão à altura e largura
-                            var width = 700,
-                                height = 700;
-                            
-                            //Usa uma escala da D3
-                            var color = d3.scale.category10();
-                            
-                            //Cria um campo "body" e atribui um svg com a altura e largura padrão
-                            var svg = d3.select('#divgrafo')
-                                        .append('svg')
-                                        .attr('width', width)
-                                        .attr('height', height);
-
-                                        // Desenha as arestas
-                            var link = svg.selectAll("line")//Cria uma linha na tela
-                                          .data(json.links) //Diz que o conjunto de linhas advem do json
-                                          .enter().append("line")
-                                          .attr("class", "link") //Atribui a classe link
-                                          .style("stroke", function(d){ return d.cor;});//cor da linha vem do json
-                            
-                            //Desenha os nós na tela
-                            var node = svg.selectAll("circle") // cria um circulo
-                                          .data(json.nodes) //Diz q os dados para criação dos circulos é os dados do json
-                                          .enter()
-                                          .append("circle") 
-                                          .attr("class", "node") //diz que a classe que usa é o .node do svg
-                                          .attr("r", "15") //Valor do Raio
-                                          .style("fill", function(d) { return d.cor;}); //atribui cor ao nó
-
-                            //Cria um tipo texto
-                            var text = svg.selectAll("text")
-                                          .data(json.nodes)
-                                          .enter()
-                                          .append("text");
-
-                            //atribui algumas propriedades aos textos dos nós
-                            var nodeText=text
-                                          .text(function(d){ return d.name;})
-                                          .attr("font-family", "sans-serif")
-                                          .attr("font-size", "20px")
-                                          .attr("fill", "black");
-
-                            // create the layout
-                            var force = d3.layout.force()
-                                        .charge(-1200)
-                                        .linkDistance(100)
-                                        .size([width, height])
-                                        .nodes(json.nodes)
-                                        .links(json.links)
-                                        .start();
-                                           
-                            // define what to do one each tick of the animation
-                            force.on("tick", function() {
-                                
-                                link.attr("x1", function(d) { return d.source.x; })
-                                    .attr("y1", function(d) { return d.source.y; })
-                                    .attr("x2", function(d) { return d.target.x; })
-                                    .attr("y2", function(d) { return d.target.y; });
-                                
-                                node.attr("cx", function(d) { return d.x; })
-                                    .attr("cy", function(d) { return d.y; });
-
-                                nodeText.attr("x", function(d) { return (d.x); })
-                                        .attr("y", function(d) { return (d.y); });
-                                });
-                            // bind the drag interaction to the nodes
-                            node.call(force.drag);
-                        });
-                    };
-
-                    var pegaBairros = function () {
-                        $http.get("http://localhost:8080/Papaleguas/app/corrida/bairros/").success(function(data){
-                            $scope.bairros = data;
-                        });
-                        console.log("Chegou no pega bairros");
-                    };
-
-                    var erro = function(){
-                        $scope.error = {};
-                        console.log("Deu ruim!");
-                    };
-
-                    //-----------------------
-                    var start = function(){
-                        pegaBairros();
-                    };
-
-                    var limpar = function(d){
-                        document.getElementById(d).innerHTML = ""; 
-                    };
-
-                    start();
-                });
-        </script>
+        <title>Papaléguas Corrida</title>
+        <!-- Aqui é feita importação dos estilos-->
+        <link rel="stylesheet" type="text/css" href="lib/css/BootStrap v3.3.7/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="lib/css/app.css">
+        
+        <!-- Imports das bibliotecas-->
+        <script src="lib/JS/angular.js"></script>
+        <script src="lib/JS/angular-locale_pt-br.js"></script>
+        <script src="lib/D3js/d3.v2.js"></script>
+        <script src="lib/JS/app.js"></script>
+        <script src="lib/JS/controllers/aplicativo.js"></script>
+        
     </head>
     <body class="jumbotron" ng-controller="CorridaCtrl">
+        <!-- Div para exibição do título-->
         <div id="divTitulo" ng-show="!corrida">
             <img id="imagem" src="bb26.png" width="10%" height="100%" alt="bb26"/>
             <label style="vertical-align: center">
@@ -214,14 +34,25 @@
                         Papaleguas Corrida!
                     </font>
             </div>
-            {{bairros}}
-            <div ng-show="!corrida && !historico">
-                <button type="button" class="btn" ng-click="novaCorrida()">Nova Corrida</button>
+            <!--Div inicial com botões e escolha de usuario-->
+            <div ng-show="!corrida && !historico && !usuarioCad && !alterar">
+                <form name="clienteForm">
+                    <select id="clienteList" ng-model="usuario" name="cliente" ng-options="cliente.nome for cliente in clientes | orderBy:'nome'" ng-required="true" >
+                        <option value=""> Selecione um cliente </option>
+                    </select>
+                </form>
+                <br>
+                <button type="button" class="btn" ng-click="novaCorrida()" ng-disabled="clienteForm.$invalid">Nova Corrida</button>
+                <button type="button" class="btn" ng-click="novoCliente()">Novo Cliente</button>
                 <button type="button" class="btn" ng-click="historico={}">Historico de Corridas</button>
+                <button type="button" class="btn" ng-click="alterar={}">Altera</button>
+                <br>
             </div>
-            <div id="div_right"></div>
-            <div id="divHistorico" ng-show="historico" >
+            
+            <!--Div Historico mostra a tabela com as corridas -->
+            <div id="divHistorico" ng-show="historico" class="jumbotron">
                 <h3>Corridas</h3>
+                
                 <table class="table table-striped">
                     <tr>
                         <th>Data</th>
@@ -230,52 +61,107 @@
                         <th>Distancia</th>
                         <th>Tempo</th>
                         <th>Valor</th>
+                        <th>Cliente</th>
+                        <th>Motorista</th>
+                        <th>Num. Taxi</th>
                     </tr>
                     <tr ng-repeat="corrida in corridas | orderBy: nome">
                         <td>{{corrida.data | date:'dd/MM/yyyy'}}</td>
                         <td>{{corrida.origem}}</td>
                         <td>{{corrida.destino}}</td>
-                        <td>{{corrida.distancia}}</td>
-                        <td>{{corrida.tempo}}</td>
-                        <td>{{corrida.valorTotal}}</td>
+                        <td>{{corrida.distancia+' km'}}</td>
+                        <td>{{corrida.tempo+' min'}}</td>
+                        <td>{{corrida.valor | currency}}</td>
+                        <td>{{corrida.cliente}}</td>
+                        <td>{{corrida.motorista}}</td>
+                        <td>{{corrida.numeroCarro}}</td>
                     </tr>
-
                 </table>
 
                 <button class="btn" type="button" ng-click="historico=undefined">OK</button>
             </div>
+            
+            <!--Div nova corrida -->
             <div id="divNovaCorrida" ng-show="corrida">
                 <br>
                 <h3>Selecione a origem e o destino</h3>
                 <form name="corridaForm">
                     Origem
-                    <select id="origemList" ng-model="corrida.origem" name="origem" ng-options="bairro.name as bairro.name for bairro in bairros | orderBy:'name'" ng-required="true" >
+                    <select id="origemList" ng-model="corrida.origem" name="origem" ng-options="bairro for bairro in bairros | orderBy:'name'" ng-required="true" >
                         <option value=""> Selecione um bairro </option>
                     </select>
                     Destino
-                    <select id="destinoList" ng-model="corrida.destino" name="destino" ng-options="bairro.name as bairro.name for bairro in bairros |orderBy:'name'" ng-required="true">
+                    <select id="destinoList" ng-model="corrida.destino" name="destino" ng-options="bairro for bairro in bairros |orderBy:'name'" ng-required="true">
                         <option value="">Selecione um bairro</option>
                     </select>
                     <br>
-                    Valor por Km: <input type="text" id="textValorKm" name="valorKm" ng-model="corrida.valorKm" pattern="[0-9]+$" required="required">
+                    Valor por Km: <input type="text" id="textValorKm" name="valorKm" placeholder="Valor com '.' " ng-model="valorKm" pattern="([0-9]{1,3}\.)?[0-9]{1,3}$" required="required">
+                    Motorista
+                    <select id="motoristasList" ng-model="taxista" name="destino" ng-options="motorista.nome for motorista in motoristas |orderBy:'name'" ng-required="true">
+                        <option value="">Selecione um Motorista</option>
+                    </select>
                 </form>
-                <button class="btn" type="button" ng-click="calcular(corrida.origem,corrida.destino, corrida.valorKm)" ng-disabled="corridaForm.$invalid">Calcular</button>
+                <button class="btn" type="button" ng-click="calcular(corrida.origem,corrida.destino)" ng-disabled="corridaForm.$invalid">Calcular</button>
                 <button class="btn" type="button" ng-click="cancelar()">Cancelar</button>
 
-                <div ng-show="corrida.origem == corrida.destino" class="alert alert-danger">
+                <div ng-show="corrida.origem === corrida.destino" class="alert alert-danger">
                     Por Favor escolha Origem diferente do Destino!
                 </div>
             </div>
-            <div id="divDetalhes" ng-show="corrida.valorTotal && corridaForm.$valid">
+            
+            <!--Div novo cliente -->
+            <div ng-show="usuarioCad">
+                <form name="formNovoCliente">
+                    Nome:<input type="text" id="nome" name="textNome" ng-model="nome" required="true">
+                </form>
+                <button class="btn" type="button" ng-disabled="formNovoCliente.$invalid" ng-click="salvarCliente(nome)">Salvar</button>
+                <button class="btn" type="button" ng-click="cancelar()">Cancelar</button>
+            </div>
+            
+            <!--Div alterar tempo entre bairros -->
+            <div ng-show="alterar" id="divAlterar">
+                <br>
+                <form name="formAlteraTempo">
+                    Origem
+                    <select id="origemList" ng-model="bairroOrigem" name="origem" ng-options="bairro for bairro in bairros | orderBy:'name'" ng-required="true" >
+                        <option value=""> Selecione um bairro </option>
+                    </select>
+                    Destino
+                    <select id="destinoList" ng-model="bairroDestino" name="destino" ng-options="bairro for bairro in bairros |orderBy:'name'" ng-required="true">
+                        <option value="">Selecione um bairro</option>
+                    </select>
+                    <br>
+                    Tempo: <input type="text" id="textTempo" name="tempo" ng-model="tempo" pattern="[0-9]+$" required="true">
+                </form>
+                <button class="btn" type="button" ng-disabled="formAlteraTempo.$invalid" ng-click="alterarTempo(bairroOrigem, bairroDestino, tempo)">Salvar</button>
+                <button class="btn" type="button" ng-click="cancelar()">Cancelar</button>
+                <div ng-show="bairrOrigem === bairroDestino" class="alert alert-danger">
+                    Por Favor escolha Origem diferente do Destino!
+                </div>
+                <div ng-show="error304" class="alert alert-danger">
+                    Os bairros não são vizinhos!
+                </div>
+            </div>
+            
+            <!--Div detalhes -->
+            <div id="divDetalhes" ng-show="corrida.valor && corridaForm.$valid">
                 <h4>Detalhes</h4>
                 <form name="detalhesForm">
-                    Distancia: <input type="text" id="txtDist" ng-model="corrida.distancia" disabled="true">
-                    Tempo: <input type="text" id="txtTempo" ng-model="corrida.tempo" required="true">
-                    Valor total: <input type="text" id="txtValorTotal" ng-model="corrida.valorTotal" disabled="true">
+                    Distancia: <input type="text" id="txtDist" ng-model="corrida.distancia+'km'" disabled="true">
+                    Tempo: <input type="text" id="txtTempo" ng-model="corrida.tempo" placeholder="tempo em min" required="true">
+                    Valor total: <input type="text" id="txtValorTotal" ng-model="corrida.valor | currency" disabled="true">
                 </form>
-                <button class="btn" type="button" ng-disabled="detalhesForm.$invalid" ng-click="salvar(corrida)">Salvar</button>
+                <button class="btn" type="button" ng-disabled="detalhesForm.$invalid" ng-click="salvarCorrida(corrida)">Salvar</button>
+                <h3>Grafo Abaixo</h3>
             </div>
+            
+            <!--Div do grafo -->
             <div id="divgrafo" ng-show="grafo" style="border-color: #239eef; border-width: 4px"></div>
+        </div>
+        
+        <!--Div de sucesso-->
+        <div ng-show="sucesso" class="alert alert-success">
+            Operação Realizada com sucesso!
         </div>
     </body>
 </html>

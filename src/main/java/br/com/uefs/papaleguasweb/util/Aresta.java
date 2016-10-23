@@ -1,31 +1,37 @@
 package br.com.uefs.papaleguasweb.util;
 
+//Classe para a criação de arestas
 public class Aresta {
 
-    private final String origem,destino;
-    private final String distancia, tempo;
+    private final Vertice origem,destino; //vertices de origem e destino
+    private final double distancia;
+    private int tempo;
 
-    public Aresta(String o,String d, String distancia, String tempo) {
+    public Aresta(Vertice o, Vertice d, double distancia, int tempo) {
         origem = o;
         destino = d;
         this.distancia = distancia;
         this.tempo = tempo;
     }
 
-    public String getOrigem() {
+    public Vertice getOrigem() {
         return origem;
     }
 
-    public String getDestino() {
+    public Vertice getDestino() {
         return destino;
     }
 
-    public String getDistancia() {
+    public double getDistancia() {
         return distancia;
     }
 
-    public String getTempo() {
+    public int getTempo() {
         return tempo;
+    }
+    
+    public void setTempo(int tempo){
+        this.tempo = tempo;
     }
 
     @Override
