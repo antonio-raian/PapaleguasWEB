@@ -151,7 +151,7 @@ public class Controlador {
         motoristas.add(m6);motoristas.add(m7);motoristas.add(m8);motoristas.add(m9);motoristas.add(m10);
         
         
-        Cliente c1 = new Cliente("Antonio");
+        Cliente c1 = new Cliente("Administrador");
   
         clientes.add(c1);
     }

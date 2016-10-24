@@ -29,6 +29,7 @@ angular.module("Aplicativo").value('urlUse', 'http://localhost:8080/Papaleguas/a
 
             //Metodo usado para abrir div de criação de corrida
             $scope.novaCorrida = function () {
+                delete $scope.sucesso;
                 $scope.corrida = {data: new Date(), origem: undefined, destino: undefined, distancia: undefined,
                                     tempo: undefined, valor: undefined, cliente:undefined, 
                                     motorista:undefined, numeroCarro:undefined};
@@ -39,7 +40,20 @@ angular.module("Aplicativo").value('urlUse', 'http://localhost:8080/Papaleguas/a
 
             //Metodo usado para abrir o div de novo cliente
             $scope.novoCliente = function() {
+                delete $scope.sucesso;
                 $scope.usuarioCad = {};//Variavel usada para controlar a divNovoCliente
+            };
+            
+            //Metodo usado para abrir o div de historico
+            $scope.historicoCad = function (){
+                $scope.historico={};
+                $scope.sucesso=undefined
+            };
+            
+            //Metodo usado para abrir o div de alterar tempo
+            $scope.alterarTempoCad = function(){
+                $scope.alterar={};
+                $scope.sucesso=undefined;
             };
 
             //Metodo para limpar todo tipo de entrada
@@ -52,7 +66,6 @@ angular.module("Aplicativo").value('urlUse', 'http://localhost:8080/Papaleguas/a
                 delete $scope.bairroDestino;
                 delete $scope.tempo;
                 delete $scope.corrida;
-                delete $scope.usuario;
                 delete $scope.taxista;
                 delete $scope.menorCaminho;
                 delete $scope.historico;
@@ -79,6 +92,7 @@ angular.module("Aplicativo").value('urlUse', 'http://localhost:8080/Papaleguas/a
                     } else {
                         $scope.corridas.push(corrida);
                     }
+                    $scope.sucesso = {};
                     $scope.corrida = undefined;
                     $scope.grafo = undefined;
                 }, function  errorCallback(response){//se der erro
@@ -100,6 +114,7 @@ angular.module("Aplicativo").value('urlUse', 'http://localhost:8080/Papaleguas/a
                     $scope.clientes.push(obj);
                     document.getElementById('nome').value="";
                     $scope.sucesso = {};
+                    delete $scope.usuarioCad;
                 }, function  errorCallback(response){
                     if(response.status === 304){
                         $scope.error={};
@@ -247,6 +262,7 @@ angular.module("Aplicativo").value('urlUse', 'http://localhost:8080/Papaleguas/a
                 }).then(function successCallback(response){
                     $scope.sucesso = {};
                     $scope.error304 = undefined;
+                    delete $scope.alterar;
                 }, function  errorCallback(response){
                     if(response.status === 304){//Tratamento apra mostrar a informação correta
                         $scope.error304 = {};

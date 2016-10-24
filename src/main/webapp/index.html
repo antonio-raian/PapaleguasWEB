@@ -17,10 +17,10 @@
         <script src="lib/JS/controllers/aplicativo.js"></script>
         
     </head>
-    <body class="jumbotron" ng-controller="CorridaCtrl">
+    <body class="jumbotron" background="images/Elevador.png" ng-controller="CorridaCtrl">
         <!-- Div para exibição do título-->
         <div id="divTitulo" ng-show="!corrida">
-            <img id="imagem" src="bb26.png" width="10%" height="100%" alt="bb26"/>
+            <img id="imagem" src="images/bb26.png" width="10%" height="100%" alt="bb26"/>
             <label style="vertical-align: center">
                 <font size='20'>
                     Papaleguas Corrida!
@@ -29,11 +29,12 @@
         </div>
         <div id="container">
             <div id="divTitulo2" ng-show="corrida">
-                <img id="imagem" src="bb26.png" width="5%" height="150%" alt="bb26"/>
-                    <font size='5.5px'>
+                <img id="imagem" src="images/bb26.png" width="5%" height="150%" alt="bb26"/>
+                    <font size='6.5px'>
                         Papaleguas Corrida!
                     </font>
             </div>
+            <h3>Usuario: {{usuario.nome}}</h3>
             <!--Div inicial com botões e escolha de usuario-->
             <div ng-show="!corrida && !historico && !usuarioCad && !alterar">
                 <form name="clienteForm">
@@ -44,8 +45,8 @@
                 <br>
                 <button type="button" class="btn" ng-click="novaCorrida()" ng-disabled="clienteForm.$invalid">Nova Corrida</button>
                 <button type="button" class="btn" ng-click="novoCliente()">Novo Cliente</button>
-                <button type="button" class="btn" ng-click="historico={}">Historico de Corridas</button>
-                <button type="button" class="btn" ng-click="alterar={}">Altera</button>
+                <button type="button" class="btn" ng-click="historicoCad()">Historico de Corridas</button>
+                <button type="button" class="btn" ng-click="alterarTempoCad()">Alterar Tempo</button>
                 <br>
             </div>
             
@@ -131,7 +132,7 @@
                         <option value="">Selecione um bairro</option>
                     </select>
                     <br>
-                    Tempo: <input type="text" id="textTempo" name="tempo" ng-model="tempo" pattern="[0-9]+$" required="true">
+                    Tempo: <input type="text" id="textTempo" name="tempo" ng-model="tempo" pattern="[1-9]+$" required="true">
                 </form>
                 <button class="btn" type="button" ng-disabled="formAlteraTempo.$invalid" ng-click="alterarTempo(bairroOrigem, bairroDestino, tempo)">Salvar</button>
                 <button class="btn" type="button" ng-click="cancelar()">Cancelar</button>
@@ -144,7 +145,7 @@
             </div>
             
             <!--Div detalhes -->
-            <div id="divDetalhes" ng-show="corrida.valor && corridaForm.$valid">
+            <div id="divDetalhes" ng-show="corrida.distancia && corridaForm.$valid">
                 <h4>Detalhes</h4>
                 <form name="detalhesForm">
                     Distancia: <input type="text" id="txtDist" ng-model="corrida.distancia+'km'" disabled="true">
